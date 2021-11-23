@@ -13,3 +13,7 @@
 3. Setup k8s infra (basic deployment and clusterip)
 4. Setup skaffold config to copy any code changes to code files to the correct container and rebuild infrastructure on k8s file changes
 5. Test infra with 'skaffold dev'
+6. Setup a basic request/response endpoint in the microservice for testing
+7. Create either a nodeport(localdev) or an ingress controller for access from outside the cluster(kubernetes.github.io/ingress-nginx)
+8. If using an ingress controller, make sure to change your /etc/hosts file for local development
+9. Chrome will probably stop access to the site locally due to the nginx self signed certificate. To get around that in development, click anywhere in the chrome webpage and type 'thisisunsafe' to be let through
